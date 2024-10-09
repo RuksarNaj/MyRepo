@@ -16,7 +16,7 @@ jobs:
         uses: sonarsource/sonarqube-scan-action@master
         env:
           GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONARGIT_TOKEN: ${{ secrets.SONARGIT_TOKEN }}
         with:
           args: >
             -Dsonar.organization=ruksarnaj
